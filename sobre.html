@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <head>
+    <script>
+      // Aplica o tema salvo antes de carregar o CSS
+      try {
+        const temaSalvo = localStorage.getItem("tema");
+        if (temaSalvo === "dark") {
+          document.documentElement.classList.remove("light");
+        } else if (temaSalvo === "light") {
+          document.documentElement.classList.add("light");
+        }
+      } catch(e){}
+    </script>
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="sobre">
+      <div id="profile">
+        <img
+          src="./assets/Avatar-light.png"
+          alt="Avatar Endrew Marra Pedrosa com chapeu e camisa preta, colar de caveira, fundo desfocado."
+        />
+        <p>@Endrewmarra</p>
+      </div>
+      <div id="switch" onclick="switchMode()">
+        <button></button>
+        <span></span>
+      </div>
+      <p id="sobre-texto">
+        Atualmente sou estudante de Análise e Desenvolvimento de Sistemas, área
+        pela qual desenvolvi grande interesse e na qual estou direcionando minha
+        carreira. Estou me aprofundando em desenvolvimento de software e
+        soluções digitais, buscando oportunidades para aplicar meus
+        conhecimentos em projetos reais e expandir minha atuação na área de TI.
+        <br /><br />
+
+        Antes de iniciar essa transição, construí uma trajetória sólida na
+        música, iniciada em 2007. Atuei como baterista e percussionista em
+        grupos como a Banda Marcial Dr. Arthur Galvão de Melo, a Orquestra GR do
+        Projeto Guri e o grupo Percussionismo. Além das apresentações em
+        orquestras, bandas e eventos, também tive a oportunidade de atuar como
+        educador musical, trabalhando em instituições como a AOPdown (Associação
+        do Oeste Paulista de Síndrome de Down).
+        <br /><br />
+
+        Minha experiência musical me proporcionou habilidades valiosas que hoje
+        aplico também na tecnologia: disciplina, criatividade, capacidade de
+        adaptação e trabalho em equipe. Estou motivado a crescer
+        profissionalmente na área de TI e aberto a novos desafios que me
+        permitam aprender, contribuir e evoluir continuamente.
+      </p>
+      <ul id="voltar">
+        <li>
+
+            <a href="./index.html">Voltar</a>
+        </li>
+      </ul>
+      <div id="redes_sociais">
+        <a href="https://github.com/Endrewmarra" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://instagram.com/Endrewmarra" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a
+          href="https://linkedin.com/in/endrew-marra-pedrosa-66066337a"
+          target="_blank"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a
+          href="https://api.whatsapp.com/send/?phone=%2B5518996024484&text&type=phone_number&app_absent=0"
+          target="_blank"
+        >
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+      </div>
+      <footer>Endrew Marra Pedrosa</footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+   
+    <script src="./script.js"></script>
+  </body>
+</html>

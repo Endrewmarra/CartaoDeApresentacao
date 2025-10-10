@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <head>
+    <script>
+      // Aplica o tema salvo antes de carregar o CSS
+      try {
+        const temaSalvo = localStorage.getItem("tema");
+        if (temaSalvo === "dark") {
+          document.documentElement.classList.remove("light");
+        } else if (temaSalvo === "light") {
+          document.documentElement.classList.add("light");
+        }
+      } catch(e){}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculo</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="curriculo">
+      <div id="profile">
+        <img
+          src="./assets/Avatar-light.png"
+          alt="Avatar Endrew Marra Pedrosa com chapeu e camisa preta, colar de caveira, fundo desfocado."
+        />
+        <p>@Endrewmarra</p>
+      </div>
+      <div id="switch" onclick="switchMode()">
+        <button></button>
+        <span></span>
+      </div>
+      <div id="curriculo-header">
+        <div id="left-line">
+            <p>Endrew Marra Pedrosa <br> 04/09/2001 - 24 Anos</p>
+            <small><p>Rua Miguel de La Casa Berenguel<br> Nº 130 <br>Vila Nova Prudente <br>Presidente Prudente - SP</p></small>
+        </div>
+        <div id="right-line">
+            <p>+55 (18)99602-4484</p>
+            <p><a href="mailto:dumarra11@gmail.com">dumarra11@gmail.com</a></p>
+            <p><a href="https://github.com/Endrewmarra" target="_blank">github/Endrewmarra</a></p>
+            <p><a href="https://linkedin.com/in/endrew-marra-pedrosa-66066337a" target="_blank">linkedin/endrew-marra-pedrosa</a></p>
+        </div>
+        <br class="limpar" />
+        <br><hr />
+      </div>
+      <div id="curriculo-content">
+
+          <h2>Experiência</h2>
+          <ul>
+            <li>
+              <strong>Apoio Escolar</strong> - Prefeitura de Regente Feijó
+              (2022–2023)
+            </li>
+            <li>
+                <strong>Educador Musical</strong> - Santa Marcelina Cultura
+            (2023–2025)
+          </li>
+          <li>
+            <strong>Educador Musical</strong> - AOPdown 
+            (2025)
+        </li>
+    </ul>
+    <h2>Formação</h2>
+    <ul>
+        <li>
+            <strong>CEL (Centro de Estudo de Línguas),</strong> Martinópolis<br>Estudo de Língua estrangeira (espanhol) -
+            <small>Completo</small> (2013 - 2015)
+        </li>
+        <li>
+            <strong>Colégio Ômega Anglo,</strong> Martinópolis <br> Ensino Médio - <small>Completo</small> (2016 - 2018)
+        </li>
+        <li>
+            <strong>UNESP,</strong> Presidente Prudente <br>Licenciatura em Física - <small>Incompleto</small> (2020 - 2024)
+        </li>
+        <li>
+            <strong>FATEC,</strong> Presidente Prudente <br> Análise e Desenvolvimento de Sistemas - <small>Cursando</small>
+            (2025 - 2028)
+        </li>
+    </ul>
+        <h2>Competências</h2>
+        <ul>
+            <li>Python e Lógica de Programação</li>
+            <li>HTML/CSS/JS (básico)</li>
+            <li>Pacote Office/Google completo</li>
+            <li>Boa relação interpessoal</li>
+            <li>Aprendizado rápido</li>
+            <li>Esforço e dedicação para o
+                cumprimento de ordens, prazos e
+                demandas.
+            </li>
+        </ul>
+        <h2>Prêmios</h2>
+        <br>
+        <p>Menções honrosas nas 9ª, 10ª e 11ª edições da OBMEP</p>
+        <br>
+        <h2>Idiomas</h2>
+        <br>
+        <p>Inglês e Espanhol - Intermediário</p>
+    </div>
+</div>
+<ul id="voltar"><li>
+    <a  href="https://drive.google.com/file/d/1-mEBrEHihgM8aVBoIbDjq7G8vIqQnvMb/view?usp=drive_link" target="_blank" download>📄 Baixar Currículo em PDF</a>
+</li>
+<li>
+    <a href="./index.html">Voltar</a>
+    </li></ul>
+      <div id="redes_sociais">
+        <a href="https://github.com/Endrewmarra" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://instagram.com/Endrewmarra" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a
+          href="https://linkedin.com/in/endrew-marra-pedrosa-66066337a"
+          target="_blank"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a
+          href="https://api.whatsapp.com/send/?phone=%2B5518996024484&text&type=phone_number&app_absent=0"
+          target="_blank"
+        >
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+      </div>
+      <footer>Endrew Marra Pedrosa</footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>
