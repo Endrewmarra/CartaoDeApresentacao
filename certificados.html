@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="light">
   <head>
-   <script>
+    <script>
       // Aplica o tema salvo antes de carregar o CSS
       try {
         const temaSalvo = localStorage.getItem("tema");
@@ -10,8 +10,9 @@
         } else if (temaSalvo === "light") {
           document.documentElement.classList.add("light");
         }
-      } catch(e){}
-    </script>   
+      } catch (e) {}
+    </script>
+    <link rel="icon" type="image/x-icon" href="./assets/logo_icon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,14 +38,31 @@
         <span></span>
       </div>
       <ul>
-        <li><a href="https://drive.google.com/drive/folders/1ufOjLJgr0FSLTuJEROPiJJYM2FjMqL1U?usp=drive_link">Todos os Certificados</a></li>
-        <li><a href="https://drive.google.com/drive/folders/1Gdtzy0FzpRi5zOHxQS57pEGHWTQTKgeL?usp=drive_link">.DIO</a></li>
         <li>
-          <a href="https://drive.google.com/drive/folders/1tVI6WGsJMMBOqwzDFD6fmqwSxt4Lec2E?usp=drive_link" target="_blank"
+          <a
+            href="https://drive.google.com/drive/folders/1ufOjLJgr0FSLTuJEROPiJJYM2FjMqL1U?usp=drive_link"
+            >Todos os Certificados</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://drive.google.com/drive/folders/1Gdtzy0FzpRi5zOHxQS57pEGHWTQTKgeL?usp=drive_link"
+            >.DIO</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://drive.google.com/drive/folders/1tVI6WGsJMMBOqwzDFD6fmqwSxt4Lec2E?usp=drive_link"
+            target="_blank"
             >RocketSeat</a
           >
         </li>
-        <li><a href="https://drive.google.com/drive/folders/1Q0smAiGjPvh3YXhwWHOecAxm8PLrcX7_?usp=drive_link">OBMEP</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/drive/folders/1Q0smAiGjPvh3YXhwWHOecAxm8PLrcX7_?usp=drive_link"
+            >OBMEP</a
+          >
+        </li>
         <li><a href="./index.html" id="Voltar">Voltar</a></li>
       </ul>
       <div id="redes_sociais">
@@ -77,7 +95,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    
+
     <script src="./script.js"></script>
   </body>
 </html>

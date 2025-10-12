@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="light">
   <head>
-   <script>
+    <script>
       // Aplica o tema salvo antes de carregar o CSS
       try {
         const temaSalvo = localStorage.getItem("tema");
@@ -10,8 +10,9 @@
         } else if (temaSalvo === "light") {
           document.documentElement.classList.add("light");
         }
-      } catch(e){}
-    </script>   
+      } catch (e) {}
+    </script>
+    <link rel="icon" type="image/x-icon" href="./assets/logo_icon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,12 +40,12 @@
       <ul>
         <li><a href="./sobre.html">Sobre</a></li>
         <li><a href="./curriculo.html">Currículo</a></li>
+        <li><a href="./certificados.html">Certificados</a></li>
         <li>
           <a href="https://github.com/Endrewmarra" target="_blank"
             >Meu Portfólio</a
           >
         </li>
-        <li><a href="./certificados.html">Certificados</a></li>
       </ul>
       <div id="redes_sociais">
         <a href="https://github.com/Endrewmarra" target="_blank">
@@ -76,7 +77,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    
+
     <script src="./script.js"></script>
   </body>
 </html>
