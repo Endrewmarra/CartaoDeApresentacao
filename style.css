@@ -218,3 +218,12 @@ footer {
   from{right:50%;}
   to{right:0%;}
 }
+.icon{
+  filter: invert(1);
+  margin-right: 2px;
+  vertical-align: middle;
+}
+.light .icon{
+  filter: invert(0);
+  margin-right: 2px;
+}
