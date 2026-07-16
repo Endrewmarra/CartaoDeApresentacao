@@ -173,6 +173,26 @@ footer {
   width: 100%;
   max-width: 588px;
   padding: 0 24px;
+  line-height: 1.6;
+}
+#curriculo-content h2 {
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+#curriculo-content > p + p {
+  margin-top: 16px;
+}
+#curriculo-content > ul {
+  gap: 20px;
+  padding: 8px 0 24px;
+}
+#curriculo-content > ul > li {
+  padding-left: 16px;
+  border-left: 2px solid var(--stroke-color);
+}
+#curriculo-content a,
+#curriculo-header a {
+  overflow-wrap: anywhere;
 }
 #curriculo-header {
   padding: 0 24px;
@@ -200,6 +220,86 @@ footer {
 }
 .limpar {
   clear: both;
+}
+@media (max-width: 699px) {
+  #curriculo {
+    margin-top: 24px;
+    padding: 0 16px;
+  }
+
+  #curriculo #profile {
+    padding: 16px 0;
+  }
+
+  #curriculo-header,
+  #curriculo-content {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #curriculo-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+    text-align: left;
+  }
+
+  #left-line,
+  #right-line {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #left-line {
+    padding-bottom: 16px;
+    border-right: 0;
+    border-bottom: 1px solid var(--stroke-color);
+  }
+
+  #right-line {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #curriculo-header .limpar,
+  #curriculo-header > br:not(.limpar) {
+    display: none;
+  }
+
+  #curriculo-header hr {
+    width: 100%;
+  }
+
+  #curriculo-content {
+    text-align: left;
+    font-size: 15px;
+  }
+
+  #curriculo-content h2 {
+    font-size: 1.3rem;
+  }
+
+  #curriculo-content > ul > li {
+    padding-left: 12px;
+  }
+
+  #voltar {
+    margin-top: 32px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #voltar .btn {
+    padding: 14px 16px;
+  }
+
+  #redes_sociais a {
+    padding: 12px;
+  }
 }
 @media (min-width:700px){
   :root{
